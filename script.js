@@ -1,56 +1,9 @@
-const header = document.querySelector("[data-header]");
-const menuButton = document.querySelector(".menu-toggle");
-const nav = document.querySelector("#site-nav");
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-const updateHeader = () => header.classList.toggle("scrolled", window.scrollY > 30);
-updateHeader();
-window.addEventListener("scroll", updateHeader, { passive: true });
-
-menuButton.addEventListener("click", () => {
-  const open = menuButton.getAttribute("aria-expanded") === "true";
-  menuButton.setAttribute("aria-expanded", String(!open));
-  nav.classList.toggle("open", !open);
-});
-
-nav.addEventListener("click", (event) => {
-  if (event.target.closest("a")) {
-    nav.classList.remove("open");
-    menuButton.setAttribute("aria-expanded", "false");
-  }
-});
-
-document.querySelector("[data-year]").textContent = new Date().getFullYear();
-
-const faqTabs = [...document.querySelectorAll("[data-faq-filter]")];
-const faqItems = [...document.querySelectorAll("[data-faq-category]")];
-
-faqTabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const filter = tab.dataset.faqFilter;
-
-    faqTabs.forEach((item) => {
-      item.setAttribute("aria-selected", String(item === tab));
-    });
-
-    faqItems.forEach((item) => {
-      const visible = filter === "all" || item.dataset.faqCategory === filter;
-      item.hidden = !visible;
-      if (!visible) item.open = false;
-    });
-  });
-});
-
-if (reducedMotion) {
-  document.querySelectorAll(".reveal").forEach((element) => element.classList.add("is-visible"));
-} else {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-}
+const header=document.querySelector('[data-header]');const menu=document.querySelector('.menu-toggle');const nav=document.querySelector('#site-nav');const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const updateHeader=()=>header.classList.toggle('scrolled',scrollY>24);updateHeader();addEventListener('scroll',updateHeader,{passive:true});
+menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open)});nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
+document.querySelector('[data-year]').textContent=new Date().getFullYear();
+document.querySelectorAll('.benefit-list details,.capability-list details').forEach(item=>item.addEventListener('toggle',()=>{if(!item.open)return;item.parentElement.querySelectorAll('details').forEach(other=>{if(other!==item)other.open=false})}));
+const showMore=document.querySelector('[data-show-more]');showMore.addEventListener('click',()=>{const list=document.querySelector('[data-capabilities]');const open=list.classList.toggle('expanded');showMore.innerHTML=open?'Show fewer capabilities <span>−</span>':'Show all capabilities <span>＋</span>'});
+const tabs=[...document.querySelectorAll('[data-tab]')];const panels=[...document.querySelectorAll('[data-panel]')];tabs.forEach(tab=>tab.addEventListener('click',()=>{tabs.forEach(t=>t.setAttribute('aria-selected',String(t===tab)));panels.forEach(panel=>panel.hidden=panel.dataset.panel!==tab.dataset.tab)}));
+document.querySelector('.contact-form').addEventListener('submit',e=>{e.preventDefault();const status=e.currentTarget.querySelector('[data-form-status]');status.textContent='Thanks — your SASE design request is ready to route.';e.currentTarget.querySelector('button').textContent='Request received ✓'});
+if(reduced){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('is-visible'))}else{const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el))}
