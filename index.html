@@ -3,247 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The official biography of Vince Sanders, Kansas City entrepreneur and founder of CBD American Shaman.">
-  <meta name="theme-color" content="#0d1f1a">
-  <title>Vince Sanders — Founder & Entrepreneur</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230d1f1a'/%3E%3Crect x='7' y='7' width='50' height='50' fill='none' stroke='%23c9a65a'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Georgia' font-size='22' fill='%23c9a65a'%3EVS%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <meta name="description" content="The story of Kansas City entrepreneur Vince Sanders, founder of CBD American Shaman and an early advocate for the American hemp industry.">
+  <meta name="theme-color" content="#241f48">
+  <title>Vince Sanders — CBD American Shaman Founder</title>
+  <style>
+    :root{--violet:#241f48;--violet2:#6557da;--lime:#d6ff54;--ice:#edf2ff;--fog:#c6cce3;--ink:#16132c;--display:"Iowan Old Style","Baskerville","Palatino Linotype",Palatino,serif;--sans:"Avenir Next","Helvetica Neue","Segoe UI",system-ui,sans-serif;--mono:"SFMono-Regular","IBM Plex Mono","Roboto Mono",ui-monospace,monospace}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ice);color:var(--ink);font-family:var(--sans);letter-spacing:-.012em}a{color:inherit}p,h1,h2,h3{margin-top:0}::selection{background:var(--lime);color:var(--violet)}:focus-visible{outline:2px solid var(--lime);outline-offset:4px}
+    .site-header{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,80px);background:var(--violet);color:var(--ice);border-bottom:1px solid #edf2ff29}.brand{display:flex;align-items:center;gap:10px;color:inherit;text-decoration:none;font:10px/1.15 var(--mono);letter-spacing:.11em}.brand-mark{display:grid;place-items:center;width:24px;height:24px;background:var(--lime);color:var(--violet);font:italic 17px var(--display)}.site-header nav{display:flex;gap:28px}.site-header nav a,.header-cta{font:9px var(--mono);letter-spacing:.08em;text-decoration:none;text-transform:uppercase}.header-cta{border:1px solid #edf2ff66;padding:10px 13px}
+    .hero{position:relative;display:grid;grid-template-columns:1.08fr .92fr;grid-template-rows:auto 1fr auto;min-height:calc(100svh - 76px);padding:28px clamp(20px,5vw,80px) 30px;background:var(--violet);color:var(--ice);isolation:isolate;overflow:hidden}.hero:after{position:absolute;inset:0;z-index:-1;content:"";background:repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),#edf2ff0e 25%)}.hero-top{grid-column:1/-1;display:flex;justify-content:space-between;padding-bottom:17px;border-bottom:1px solid #edf2ff38;font:9px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--fog)}.hero-copy{align-self:center;padding:50px 0}.kicker{font:9px var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--lime)}.hero h1{margin:35px 0 29px;font:400 clamp(86px,11.2vw,182px)/.68 var(--display);letter-spacing:-.095em}.hero h1 em{color:var(--lime);font-style:normal}.dek{max-width:490px;margin:0;font:400 clamp(20px,2vw,30px)/1.24 var(--display);letter-spacing:-.035em;color:var(--fog)}.hero-art{position:relative;display:grid;place-items:center;min-width:0}.hero-art svg{width:min(42vw,540px);overflow:visible}.orbits{fill:none;stroke:#edf2ff4a;stroke-width:1}.nodes{fill:var(--lime);stroke:var(--violet);stroke-width:5}.hero-art text{fill:var(--ice);font:400 88px var(--display);letter-spacing:-.08em}.hero-art .svg-label{fill:var(--lime);font:11px var(--mono);letter-spacing:.16em}.art-note{position:absolute;right:0;bottom:8%;font:8px/1.55 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--fog);text-align:right}.hero-foot{grid-column:1/-1;display:flex;gap:21px;align-items:center;padding-top:18px;border-top:1px solid #edf2ff38;font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase}.hero-foot i{color:var(--lime);font-style:normal}
+    .intro{display:grid;grid-template-columns:.35fr 1.65fr;gap:6vw;padding:115px clamp(20px,9vw,145px) 125px}.section-label{font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase}.section-label span{color:var(--violet2)}.section-label p{margin-top:9px}.intro-story h2{max-width:900px;margin:0 0 62px;font:400 clamp(48px,6.2vw,96px)/.91 var(--display);letter-spacing:-.075em}.intro-story h2 em,.timeline h2 em,.context h2 em,.impact h2 em{color:var(--violet2);font-style:normal}.columns{display:grid;grid-template-columns:1fr 1fr;gap:5vw;max-width:850px}.columns p,.context-body p{font-size:16px;line-height:1.7}.columns p:first-child:first-letter{float:left;margin:8px 9px 0 0;color:var(--violet2);font:400 67px/.7 var(--display)}
+    .quote{padding:90px clamp(20px,9vw,145px) 98px;background:var(--lime);color:var(--violet)}.quote>span{font:9px var(--mono);letter-spacing:.12em;text-transform:uppercase}.quote blockquote{margin:47px 0 34px;font:400 clamp(65px,10vw,158px)/.73 var(--display);letter-spacing:-.09em}.quote blockquote em{color:var(--violet2);font-style:normal}.quote p{max-width:390px;margin:0 0 0 auto;font:10px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+    .timeline{padding:110px clamp(20px,6vw,95px) 125px;background:var(--violet);color:var(--ice)}.timeline header{display:grid;grid-template-columns:.35fr 1.65fr;gap:5vw;align-items:start;margin-bottom:85px}.timeline header .section-label span{color:var(--lime)}.timeline h2{margin:0;font:400 clamp(49px,6.2vw,96px)/.9 var(--display);letter-spacing:-.075em}.timeline h2 em{color:var(--lime)}.timeline-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #edf2ff40}.timeline article{padding:0 2vw 20px 0;margin-right:2vw}.time-mark{display:flex;align-items:center;margin-top:-6px}.time-mark i{order:-1;width:11px;height:11px;margin-right:12px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 5px var(--violet),0 0 0 6px #d6ff5466}.time-mark span{font:8px var(--mono);color:var(--fog)}.year{margin:45px 0 18px;color:var(--lime);font:9px var(--mono);letter-spacing:.09em;text-transform:uppercase}.timeline h3{min-height:61px;margin:0 0 20px;font:400 28px/.98 var(--display);letter-spacing:-.045em}.timeline article>p:last-child{margin:0;color:var(--fog);font-size:13px;line-height:1.55}
+    .context{display:grid;grid-template-columns:1fr 1fr;gap:9vw;padding:115px clamp(20px,9vw,145px);background:var(--violet2);color:var(--ice)}.context-title>span,.impact-heading>span,.sources>span{font:9px var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--lime)}.context h2{margin:45px 0 0;font:400 clamp(52px,6.3vw,96px)/.88 var(--display);letter-spacing:-.075em}.context h2 em{color:var(--lime)}.context-body{padding-top:50px}.context-body p{color:#e2e0ff}.context-body p+p{margin-top:28px}
+    .impact{padding:115px clamp(20px,9vw,145px) 125px}.impact-heading{display:grid;grid-template-columns:.55fr 1.45fr;gap:5vw}.impact-heading>span{color:var(--violet2)}.impact h2{margin:0;font:400 clamp(52px,6.2vw,96px)/.9 var(--display);letter-spacing:-.075em}.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:78px;border-top:1px solid #16132c38}.impact article{min-height:300px;padding:26px 3vw 25px 0;margin-right:3vw;border-right:1px solid #16132c38}.impact article:last-child{border:0;margin:0}.impact b{font:9px var(--mono);color:var(--violet2)}.impact h3{margin:75px 0 18px;font:400 35px/.98 var(--display);letter-spacing:-.05em}.impact p{max-width:310px;font-size:14px;line-height:1.6}
+    .sources{display:grid;grid-template-columns:.55fr 1fr .75fr;gap:4vw;padding:45px clamp(20px,6vw,95px);background:var(--ink);color:var(--ice)}.sources>div{display:grid;gap:15px}.sources a{width:max-content;max-width:100%;font:10px var(--mono);text-underline-offset:5px}.sources>p{margin:0;color:var(--fog);font:9px/1.55 var(--mono);letter-spacing:.03em}.footer{display:flex;justify-content:space-between;gap:20px;padding:28px clamp(20px,6vw,95px);background:var(--lime);color:var(--violet);font:9px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+    @media(max-width:800px){.site-header{height:66px}.site-header nav{display:none}.hero{display:block;min-height:auto;padding:22px 20px 30px}.hero-top{font-size:7px}.hero-copy{padding:72px 0 35px}.hero h1{font-size:89px}.dek{font-size:21px;max-width:330px}.hero-art{height:320px}.hero-art svg{width:330px}.art-note{bottom:0}.hero-foot{margin-top:30px;gap:9px;justify-content:space-between;font-size:7px}.intro{display:block;padding:75px 20px}.intro-story h2{font-size:51px;margin:42px 0}.columns{display:block}.columns p{font-size:15px}.quote{padding:72px 20px}.quote blockquote{font-size:69px}.quote p{margin-top:40px}.timeline{padding:76px 20px}.timeline header{display:block;margin-bottom:65px}.timeline h2{font-size:53px;margin-top:40px}.timeline-grid{display:block;border-top:0;border-left:1px solid #edf2ff40;margin-left:5px}.timeline article{position:relative;padding:0 0 48px 31px;margin:0}.time-mark{position:absolute;left:-6px;top:2px;margin:0}.time-mark span{display:none}.year{margin:0 0 13px}.timeline h3{min-height:auto;font-size:30px}.context{display:block;padding:75px 20px}.context h2{font-size:54px}.context-body{padding-top:37px}.context-body p{font-size:15px}.impact{padding:76px 20px}.impact-heading{display:block}.impact h2{font-size:54px;margin-top:42px}.impact-grid{display:block;margin-top:55px}.impact article{min-height:auto;padding:28px 0;border-right:0;border-bottom:1px solid #16132c38}.impact h3{margin:35px 0 15px}.sources{display:block;padding:45px 20px}.sources>div{margin:28px 0 40px}.sources a{font-size:9px}.footer{display:block;line-height:1.7}}
+    @media(prefers-reduced-motion:no-preference){.nodes circle{animation:pulse 3.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.nodes circle:nth-child(2n){animation-delay:-1.7s}@keyframes pulse{50%{transform:scale(1.28);opacity:.65}}}
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header" data-header>
-    <a class="wordmark" href="#top" aria-label="Vince Sanders, home">
-      <span class="monogram">VS</span>
-      <span>Vince Sanders</span>
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span></span><span></span><span class="sr-only">Menu</span>
-    </button>
-    <nav id="site-nav" aria-label="Primary navigation">
-      <a href="#story">Story</a>
-      <a href="#company">Company</a>
-      <a href="#record">Record</a>
-      <a class="nav-cta" href="#contact">Connect <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-meta reveal">
-        <span>Founder / Entrepreneur</span>
-        <span>Kansas City, Missouri</span>
-      </div>
-      <div class="hero-copy">
-        <p class="eyebrow reveal">A life built outside the expected lines</p>
-        <h1 class="reveal">Vince<br><em>Sanders</em></h1>
-        <p class="hero-dek reveal">Founder of CBD American Shaman. Self-taught entrepreneur. Builder of one of America’s largest hemp retail networks.</p>
-      </div>
-      <div class="hero-mark reveal" aria-hidden="true">
-        <svg viewBox="0 0 540 540">
-          <g class="rings">
-            <circle cx="270" cy="270" r="224"/>
-            <circle cx="270" cy="270" r="157"/>
-            <path d="M270 46 464 158v224L270 494 76 382V158Z"/>
-            <path d="m133 270 137-79 137 79-137 79Z"/>
-          </g>
-          <g class="points">
-            <circle cx="270" cy="46" r="9"/><circle cx="464" cy="158" r="9"/>
-            <circle cx="464" cy="382" r="9"/><circle cx="270" cy="494" r="9"/>
-            <circle cx="76" cy="382" r="9"/><circle cx="76" cy="158" r="9"/>
-          </g>
-          <text x="270" y="286" text-anchor="middle">VS</text>
-        </svg>
-        <span>Est. 2015 / Kansas City</span>
-      </div>
-      <a class="scroll-cue" href="#story">Read the story <span aria-hidden="true">↓</span></a>
-    </section>
-
-    <section class="opening section" id="story">
-      <div class="section-tag reveal"><span>01</span> The beginning</div>
-      <div class="opening-copy">
-        <h2 class="reveal">Entrepreneurship wasn’t a career choice. It was <em>the way forward.</em></h2>
-        <div class="prose-columns reveal">
-          <p><strong>Stephen Vincent Sanders II</strong> was born and raised in Kansas City, Missouri, in a family shaped by entrepreneurial drive. When his father was sentenced to prison, Sanders left high school to help create financial stability at home. As a teenager, he started an auto-detailing company and taught himself business by doing it.</p>
-          <p>Sanders has never followed a traditional corporate path. In the 1990s, that instinct took him into the underground marijuana economy. He later pleaded guilty to a federal drug conspiracy charge tied to a multi-state distribution operation and served 32 months in federal prison. The conviction remains part of his story—and part of the perspective he brought to a changing cannabis industry.</p>
-        </div>
-      </div>
-    </section>
-
-    <figure class="story-portrait">
-      <div class="portrait-note reveal">
-        <span>Field notes / Kansas City</span>
-        <p>From the margins of an industry to the center of its American retail story.</p>
-      </div>
-      <div class="portrait-image reveal">
-        <img
-          src="assets/vince-sanders-hemp.jpeg"
-          alt="Vince Sanders standing among tall hemp plants"
-          width="678"
-          height="452"
-          loading="lazy">
-        <figcaption>Vince Sanders / Founder, CBD American Shaman</figcaption>
-      </div>
-    </figure>
-
-    <section class="turning-point">
-      <div class="turning-year reveal">2012</div>
-      <div class="turning-copy reveal">
-        <p class="eyebrow">The turning point</p>
-        <h2>A family illness became a search for a better way.</h2>
-        <p>When Denny Van Tuyl—a beloved uncle and paternal figure—was diagnosed with Stage 4 lung cancer, Sanders began researching cannabinoids as a way to help ease his pain and treatment side effects. With few commercial CBD products available, he experimented with low-THC hemp and early extraction methods. The experience convinced him that the plant held both therapeutic promise and commercial potential.</p>
-      </div>
-    </section>
-
-    <section class="film section" aria-labelledby="film-title">
-      <div class="section-tag reveal"><span>Watch</span> In his own words</div>
-      <div class="film-content">
-        <div class="film-heading reveal">
-          <h2 id="film-title">The story, told<br><em>in conversation.</em></h2>
-          <p>Watch Vince Sanders discuss the experiences, decisions, and ideas behind his entrepreneurial path.</p>
-        </div>
-        <div class="video-frame reveal">
-          <iframe
-            src="https://www.youtube.com/embed/WI3IMSfQlRI?si=mFeWUb-4pV909ffX&amp;start=8&amp;rel=0"
-            title="Vince Sanders in conversation"
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <a class="video-link reveal" href="https://www.youtube.com/watch?v=WI3IMSfQlRI&amp;t=8s" target="_blank" rel="noreferrer">
-          Watch directly on YouTube <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="company section" id="company">
-      <div class="section-tag reveal"><span>02</span> CBD American Shaman</div>
-      <div class="company-heading reveal">
-        <p class="eyebrow">Founded March 2015</p>
-        <h2>From a Kansas City idea to <em>American main streets.</em></h2>
-        <a class="company-site-link" href="https://cbdamericanshaman.com/" target="_blank" rel="noreferrer">
-          Visit CBD American Shaman <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-      <div class="company-layout">
-        <div class="record-spine reveal" aria-label="Company timeline">
-          <article>
-            <time>2015</time>
-            <div><h3>The launch</h3><p>CBD American Shaman officially launched in Kansas City after years spent navigating the early state-level hemp landscape.</p></div>
-          </article>
-          <article>
-            <time>2018</time>
-            <div><h3>A national opening</h3><p>Following the Farm Bill, the company accelerated its franchise-led retail expansion across the United States.</p></div>
-          </article>
-          <article>
-            <time>360+</time>
-            <div><h3>Stores at peak</h3><p>The network grew to more than 360 brick-and-mortar storefronts, supported by headquarters in Missouri and processing operations in Montana.</p></div>
-          </article>
-        </div>
-        <div class="company-aside reveal">
-          <figure class="company-portrait">
-            <img
-              src="assets/vince-sanders-american-shaman.jpg"
-              alt="Vince Sanders wearing a CBD American Shaman shirt"
-              width="1200"
-              height="1202"
-              loading="lazy">
-            <figcaption>Vince Sanders / CBD American Shaman</figcaption>
-          </figure>
-          <div class="company-statement">
-            <span class="stamp">Built to scale</span>
-            <p>Sanders designed the business around physical retail, education, and franchising. The company distinguished its product line through “water-soluble” CBD formulations marketed as an alternative to traditional oil-based tinctures, with an emphasis on consumer experience and absorption.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="principles">
-      <div class="principles-intro reveal">
-        <span>03 / The operating system</span>
-        <h2>Learn by moving.<br>Build by <em>doing.</em></h2>
-      </div>
-      <div class="principle-grid">
-        <article class="reveal"><span>01</span><h3>Start before certainty</h3><p>Sanders built businesses in categories before the path was obvious or established.</p></article>
-        <article class="reveal"><span>02</span><h3>Make access tangible</h3><p>Retail stores gave an unfamiliar product a local place, a guide, and room for questions.</p></article>
-        <article class="reveal"><span>03</span><h3>Scale through people</h3><p>A franchise network let independent operators carry the model into communities nationwide.</p></article>
-      </div>
-    </section>
-
-    <section class="record section" id="record">
-      <div class="section-tag reveal"><span>04</span> The full record</div>
-      <div class="record-copy">
-        <h2 class="reveal">Progress and scrutiny can exist in the <em>same story.</em></h2>
-        <div class="record-grid reveal">
-          <p>In the 2020s, Sanders expanded into products derived from <i>Mitragyna speciosa</i> (kratom), including concentrated 7-hydroxymitragynine, or 7-OH. The category drew public-health and regulatory scrutiny over dependency risk, marketing practices, and limited clinical data.</p>
-          <p>The Missouri Attorney General initiated a consumer-protection investigation associated with these operations. In June 2026, Sanders agreed to suspend the sale and distribution of kratom and 7-OH products in Missouri. This site presents that development as part of the public record, not apart from it.</p>
-        </div>
-        <p class="disclaimer reveal">Nothing on this website is medical advice. No statement on this page is intended to diagnose, treat, cure, or prevent any disease.</p>
-        <section class="faq reveal" aria-labelledby="faq-title">
-          <div class="faq-heading">
-            <p class="eyebrow">Frequently asked questions</p>
-            <h3 id="faq-title">A few things worth<br>knowing.</h3>
-          </div>
-          <div class="faq-tabs" role="tablist" aria-label="FAQ categories">
-            <button type="button" role="tab" aria-selected="true" data-faq-filter="all">All questions</button>
-            <button type="button" role="tab" aria-selected="false" data-faq-filter="founder">Founder story</button>
-            <button type="button" role="tab" aria-selected="false" data-faq-filter="business">Business &amp; record</button>
-          </div>
-          <div class="faq-list">
-            <details data-faq-category="founder">
-              <summary>
-                <span>Who is Vince Sanders?</span>
-                <i aria-hidden="true"></i>
-              </summary>
-              <p>Vince Sanders is a self-taught entrepreneur from Kansas City, Missouri, and the founder of CBD American Shaman. He began working for himself as a teenager and has spent his career building independently owned businesses.</p>
-            </details>
-            <details data-faq-category="founder">
-              <summary>
-                <span>Why did he start CBD American Shaman?</span>
-                <i aria-hidden="true"></i>
-              </summary>
-              <p>Sanders began researching cannabinoids in 2012 after his uncle Denny Van Tuyl was diagnosed with Stage 4 lung cancer. That personal search led him to experiment with early hemp extracts and, in March 2015, launch CBD American Shaman.</p>
-            </details>
-            <details data-faq-category="business">
-              <summary>
-                <span>What is “water-soluble” CBD?</span>
-                <i aria-hidden="true"></i>
-              </summary>
-              <p>It is the company’s term for formulations designed to disperse in water rather than remain oil-based. CBD American Shaman has marketed this delivery format as a way to improve the consumer experience and product absorption. These statements are not medical claims.</p>
-            </details>
-            <details data-faq-category="founder">
-              <summary>
-                <span>Did Vince Sanders serve time in federal prison?</span>
-                <i aria-hidden="true"></i>
-              </summary>
-              <p>Yes. Sanders pleaded guilty to a federal drug conspiracy charge connected to a multi-state marijuana distribution operation and served 32 months in federal prison. His conviction is included here as part of the complete public record.</p>
-            </details>
-            <details data-faq-category="business">
-              <summary>
-                <span>What happened with kratom and 7-OH in Missouri?</span>
-                <i aria-hidden="true"></i>
-              </summary>
-              <p>Following a consumer-protection investigation by the Missouri Attorney General, Sanders agreed in June 2026 to suspend the sale and distribution of kratom and 7-hydroxymitragynine products in Missouri.</p>
-            </details>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <p class="eyebrow reveal">Vince Sanders / Kansas City</p>
-      <h2 class="reveal">The next chapter is<br><em>still being built.</em></h2>
-      <a class="contact-link reveal" href="mailto:hello@vincesanders.com">hello@vincesanders.com <span aria-hidden="true">↗</span></a>
-    </section>
+  <header class="site-header"><a class="brand" href="#top"><span class="brand-mark">H</span><span>HOLISTIC SEO<br>MASTERMIND</span></a><nav aria-label="Page navigation"><a href="#story">Story</a><a href="#path">Path</a><a href="#sources">Sources</a></nav><a class="header-cta" href="#story">Read biography ↘</a></header>
+  <main id="top">
+    <section class="hero"><div class="hero-top"><span>Founder biography</span><span>Kansas City, Missouri</span></div><div class="hero-copy"><p class="kicker">CBD American Shaman / Founder &amp; president</p><h1>Vince<br><em>Sanders.</em></h1><p class="dek">The self-taught entrepreneur who helped move CBD from the legal margins into American main streets.</p></div><div class="hero-art"><svg viewBox="0 0 520 520" role="img" aria-label="Abstract molecular diagram inspired by hemp compounds"><g class="orbits"><circle cx="260" cy="260" r="196"/><circle cx="260" cy="260" r="128"/><path d="M94 156 260 64l167 96v193L260 450 93 354Z"/><path d="m150 260 110-64 111 64v128"/></g><g class="nodes"><circle cx="260" cy="64" r="13"/><circle cx="427" cy="160" r="13"/><circle cx="427" cy="353" r="13"/><circle cx="260" cy="450" r="13"/><circle cx="93" cy="354" r="13"/><circle cx="94" cy="156" r="13"/><circle cx="260" cy="196" r="19"/></g><text x="260" y="278" text-anchor="middle">VS</text><text x="260" y="310" text-anchor="middle" class="svg-label">KANSAS CITY / 2015</text></svg><span class="art-note">Founder profile<br>Field note № 04</span></div><div class="hero-foot"><span>Entrepreneurship</span><i>×</i><span>Hemp advocacy</span><i>×</i><span>Retail innovation</span></div></section>
+    <section class="intro" id="story"><div class="section-label"><span>01</span><p>The short version</p></div><div class="intro-story"><h2>One family crisis became a <em>national business.</em></h2><div class="columns"><p>Vince Sanders was born and raised in Kansas City, Missouri, surrounded by entrepreneurs on both sides of his family. He started working for himself as a young man, first in car detailing, and built his career by learning through action.</p><p>His turn toward hemp began when an uncle was diagnosed with terminal lung cancer. Looking for ways to ease his discomfort, Sanders researched CBD and began making crude extracts. The effort did not save his uncle, but it convinced Sanders that cannabinoids deserved wider access and serious attention.</p></div></div></section>
+    <section class="quote"><span>His operating principle</span><blockquote>“Pick a place<br>and <em>go.</em>”</blockquote><p>Sanders on learning through action and building the ladder as you climb.</p></section>
+    <section class="timeline" id="path"><header><div class="section-label"><span>02</span><p>The path</p></div><h2>From first extract<br>to <em>storefront.</em></h2></header><div class="timeline-grid">
+      <article><div class="time-mark"><span>01</span><i></i></div><p class="year">Early years</p><h3>An entrepreneur by example</h3><p>Raised in Kansas City in a family of business owners, Sanders learned customer service and sales close to home. His first venture was a car-detailing business.</p></article>
+      <article><div class="time-mark"><span>02</span><i></i></div><p class="year">2012</p><h3>A personal search</h3><p>When his uncle became terminally ill, Sanders began researching cannabinoids and experimenting with early hemp extracts. The experience became the reason he entered CBD.</p></article>
+      <article><div class="time-mark"><span>03</span><i></i></div><p class="year">2015</p><h3>American Shaman begins</h3><p>Sanders founded CBD American Shaman in Kansas City, initially supplying CBD products to smoke shops, chiropractors and health stores.</p></article>
+      <article><div class="time-mark"><span>04</span><i></i></div><p class="year">2016–18</p><h3>From store to movement</h3><p>The first Kansas City retail store opened, while Sanders joined other hemp businesses in organizing and advocating for clearer state and federal rules.</p></article>
+      <article><div class="time-mark"><span>05</span><i></i></div><p class="year">Today</p><h3>A national footprint</h3><p>The company grew from a local experiment into a widely distributed cannabinoid brand with a large franchise and retail network.</p></article>
+    </div></section>
+    <section class="context"><div class="context-title"><span>03 / Context</span><h2>A path with<br><em>rough edges.</em></h2></div><div class="context-body"><p>Sanders’ story is not a polished, straight-line founder myth. Before hemp, he served federal prison time for a marijuana-trafficking conspiracy—history he later discussed openly with Kansas City public radio. His second act unfolded in another unsettled category: CBD, before federal and state rules were clear.</p><p>That past helps explain both his appetite for legal risk and his emphasis on second chances. Sanders lobbied lawmakers, worked with the U.S. Hemp Roundtable, and pushed for the rules that helped establish a legal national hemp market. Admirers call that persistence; critics see a businessman repeatedly testing the edge of regulation. Both are part of the record.</p></div></section>
+    <section class="impact"><div class="impact-heading"><span>04 / What he built</span><h2>The American Shaman <em>idea.</em></h2></div><div class="impact-grid"><article><b>01</b><h3>Explain before selling</h3><p>Brick-and-mortar stores gave a then-unfamiliar product a human guide and a place for questions.</p></article><article><b>02</b><h3>Make absorption the story</h3><p>The brand made water-soluble delivery and nano-emulsion central to how it described its product innovation.</p></article><article><b>03</b><h3>Scale through partners</h3><p>Wholesale distribution and franchising turned a Kansas City operation into a recognizable national retail network.</p></article></div></section>
+    <section class="sources" id="sources"><span>Reporting &amp; sources</span><div><a href="https://americanshamanfranchise.com/our-story/" target="_blank" rel="noreferrer">American Shaman — Our Story ↗</a><a href="https://www.kcur.org/health/2019-09-03/the-man-behind-kansas-citys-fastest-growing-cbd-chain-is-gaining-notoriety-and-making-some-enemies" target="_blank" rel="noreferrer">KCUR — Founder profile ↗</a><a href="https://www.bitbean.com/ceos-speak/vince-sanders-of-cbd-american-shaman/" target="_blank" rel="noreferrer">CEOs Speak — Interview ↗</a></div><p>This biography summarizes public reporting and first-person interviews. It does not offer medical advice or endorse health claims about CBD.</p></section>
   </main>
-
-  <footer>
-    <a class="wordmark" href="#top"><span class="monogram">VS</span><span>Vince Sanders</span></a>
-    <p>© <span data-year></span> Vince Sanders. All rights reserved.</p>
-    <a href="#top">Back to top ↑</a>
-  </footer>
+  <footer class="footer"><span>© 2026 Holistic SEO Mastermind</span><span>Static, self-contained biography page</span></footer>
 </body>
 </html>
